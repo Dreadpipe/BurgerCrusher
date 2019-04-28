@@ -8,5 +8,6 @@ The year is 3099.  In Neo Siberia, a dystopian society has destroyed the ecosyst
 - [x] Modify ORM to accommodate burger queries
 - [x] Modify Controller to proper syntax and routes
 - [] Modify Handlebars to accept burger info
+-- [x] Main.handlebars ready to go
 - [] Custom CSS for the love of god
 - [] Test, debug
