@@ -1,0 +1,14 @@
+<h2>The Burgers you gotta CRUSH!</h2>
+<br>
+<ul style="list-style: none;">
+  {{#each burgers}}
+    {{#unless this.crushed}}
+      <li>
+        {{this.burger_name}}
+        <br>
+        {{> burgers/devour-burger}}
+        <hr>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>

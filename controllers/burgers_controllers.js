@@ -4,13 +4,13 @@ const express = require("express");
 const router = express.Router();
 
 // Import the model (burgerModel.js) to use its database functions.
-const burger = require("../models/burgerModel");
+const burger = require("../models/burger");
 
 // ROUTES (default "/" = GET, selectAll = GET, insertOne = POST, updateOne = PUT)
 
 // DEFAULT - SELECT ALL?
 router.get("/", function (req, res) {
-    burger.all(function (data) {
+    burger.selectAll(function (data) {
         var hbsObject = {
             burger: data
         };
@@ -20,7 +20,7 @@ router.get("/", function (req, res) {
 });
 // INSERT ONE
 router.post("/api/burgers", function (req, res) {
-    burger.create([
+    burger.insertOne([
         "burger_name"
     ], [
         req.body.name
@@ -38,7 +38,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
     console.log("condition", condition);
 
-    burger.update({
+    burger.updateOne({
         crushed: true
     }, condition, function (result) {
         if (result.changedRows == 0) {

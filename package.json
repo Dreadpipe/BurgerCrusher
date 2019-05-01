@@ -1,0 +1,27 @@
+{
+  "name": "BurgerCrusher",
+  "version": "1.0.0",
+  "description": "An app that tracks burgers, and the consuming of said burgers. An app of dire importance, that will benefit the progress of man.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreadpipe/BurgerCrusher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dreadpipe/BurgerCrusher/issues"
+  },
+  "homepage": "https://github.com/Dreadpipe/BurgerCrusher#readme"
+}
