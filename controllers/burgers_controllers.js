@@ -7,7 +7,9 @@ const router = express.Router();
 const burger = require("../models/burger");
 
 // ROUTES (default "/" = GET, selectAll = GET, insertOne = POST, updateOne = PUT)
-
+app.get("/", function(req, res) {
+    res.json(path.join(__dirname, "public/index.html"));
+  });
 // DEFAULT - SELECT ALL?
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
